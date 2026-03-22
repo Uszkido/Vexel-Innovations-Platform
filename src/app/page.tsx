@@ -1,9 +1,12 @@
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import About from "@/components/About";
+import Stats from "@/components/Stats";
 import Capabilities from "@/components/Capabilities";
 import Projects from "@/components/Projects";
 import TechStack from "@/components/TechStack";
+import FutureRoadmap from "@/components/FutureRoadmap";
+import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
 
 export default function Home() {
@@ -11,10 +14,13 @@ export default function Home() {
     <main className="min-h-screen bg-background text-foreground overflow-x-hidden">
       <Navbar />
       <Hero />
+      <Stats />
       <About />
       <Capabilities />
       <Projects />
+      <FutureRoadmap />
       <TechStack />
+      <ContactSection />
       <Footer />
     </main>
   );

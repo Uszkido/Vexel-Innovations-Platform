@@ -9,7 +9,7 @@ export default function Footer() {
     const currentYear = new Date().getFullYear();
 
     return (
-        <footer id="contact" className="relative pt-32 pb-16 bg-background border-t border-glass-border overflow-hidden">
+        <footer className="relative pt-24 pb-16 bg-background border-t border-glass-border overflow-hidden">
             {/* Background glow shadow */}
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-brand-blue/5 rounded-full blur-[150px] pointer-events-none" />
 
@@ -51,21 +51,12 @@ export default function Footer() {
                     </div>
 
                     <div className="space-y-6">
-                        <h4 className="text-xl font-bold font-orbitron text-brand-blue">Get In Touch</h4>
-                        <div className="space-y-6">
-                            <Link href="mailto:info@vexelinnovations.com" className="flex items-center gap-4 group">
-                                <div className="p-3 rounded-xl glass border border-glass-border group-hover:bg-brand-blue/10 transition-all duration-300">
-                                    <Mail size={20} className="text-brand-blue group-hover:scale-110 transition-transform" />
-                                </div>
-                                <div>
-                                    <h5 className="text-xs font-bold font-orbitron text-text-muted uppercase tracking-widest">Email Us</h5>
-                                    <p className="text-text-strong group-hover:text-brand-blue transition-all">info@vexelinnovations.com</p>
-                                </div>
-                            </Link>
-
-                            <button className="w-full py-4 glass border border-glass-border font-black font-orbitron rounded-xl hover:bg-brand-blue hover:text-background hover:border-brand-blue transition-all duration-300 shadow-[0_0_20px_rgba(0,194,255,0.2)]">
-                                Start a Project
-                            </button>
+                        <h4 className="text-xl font-bold font-orbitron text-brand-blue">Legal</h4>
+                        <div className="flex flex-col gap-4 text-text-muted font-poppins">
+                            <Link href="/privacy" className="hover:text-text-strong transition-colors">Privacy Policy</Link>
+                            <Link href="/terms" className="hover:text-text-strong transition-colors">Terms of Service</Link>
+                            <Link href="/security" className="hover:text-text-strong transition-colors">Security Audit</Link>
+                            <a href="/cac-certificate.pdf" target="_blank" className="hover:text-text-strong transition-colors">CAC Certificate</a>
                         </div>
                     </div>
                 </div>
@@ -80,10 +71,8 @@ export default function Footer() {
                         </p>
                     </div>
 
-                    <div className="flex gap-8 text-[10px] font-black font-orbitron text-text-strong/50 uppercase tracking-widest">
-                        <Link href="/privacy" className="hover:text-brand-blue transition-colors">Privacy</Link>
-                        <Link href="/terms" className="hover:text-brand-blue transition-colors">Terms</Link>
-                        <a href="/cac-certificate.pdf" target="_blank" className="hover:text-brand-blue transition-colors">CAC Certificate</a>
+                    <div className="flex gap-8 text-[10px] font-black font-orbitron text-text-strong/50 uppercase tracking-widest invisible md:visible">
+                        VEXEL-SECURE-AUDIT-2026
                     </div>
                 </div>
             </div>
